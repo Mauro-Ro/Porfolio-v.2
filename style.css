@@ -7,10 +7,10 @@
 }
 body{
     max-width: 100%;
-    font-family: "Lexend", sans-serif;
+    font-family: "Roboto Condensed", sans-serif;
     background-color: #222;  
     max-width: 1400;
-    color: #999;
+    color: #ffffff;
     min-width: 350px;
 }
 
@@ -25,7 +25,7 @@ body{
     display: flex;
     text-align: left;  
     font-size: 40px;
-    color: white;
+    color: rgb(255, 255, 255);
     margin: 35px 30px; 
 }
 
@@ -40,7 +40,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 25px;
+    padding: 5px;
     transition: all 0.5s ease;
     position: fixed;
 }
@@ -56,28 +56,37 @@ nav ul li {
     margin: 20px 20px;
 }
 nav ul li a{
-    color: white;
+    color: rgb(255, 255, 255);
     padding: 20px 20px;
     border-radius: 3px;
-    font-size: 20px;
+    font-size: 25px;
 }
 nav a:hover{
     background-color: #222;
     text-transform: .3s;
 }
 .nav.active{
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.524);
 }
-
+.nav.active .logo{
+    font-size: 42px;
+    transition: all 0.3s ease;
+    color: #222;
+}
+nav.nav.active a{
+    font-size: 26px;  
+    transition: all 0.3s ease;
+    color: #222;
+}
+nav.nav.active a:hover{
+    color: white;
+}
 .scrol{
     height: 1000px;
 }
-.nav a.active{
-    color: #222;
+.scrol2{
+    height: 200px;
 }
-
-
-
 
 
 
