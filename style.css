@@ -13,13 +13,36 @@ body{
     color: #999;
     min-width: 350px;
 }
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-image: url(Photo\ Wallpaper\ 3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.logo{
+    display: flex;
+    text-align: left;  
+    font-size: 40px;
+    color: white;
+    margin: 35px 30px; 
+}
+
 .nav{
-    text-align: center;
+    /* text-align: center;
     align-content: center;
     border: 1px solid #ccc;
-    background-color: rgb(139, 133, 133);
+    background-color: rgba(139, 133, 133, 0);
     height: 80%;
+    width: 100%; */
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    transition: all 0.5s ease;
+    position: fixed;
 }
 nav ul {
     float: right;
@@ -27,36 +50,31 @@ nav ul {
     line-height: 80px;
     margin: 0 5px;
 }
-
 nav ul li {
     display: inline-block;
+    line-height: 80px;
     margin: 20px 20px;
 }
 nav ul li a{
     color: white;
     padding: 20px 20px;
     border-radius: 3px;
+    font-size: 20px;
 }
 nav a:hover{
     background-color: #222;
-    text-transform: .2s;
+    text-transform: .3s;
 }
-.checkbtn{
-    font-size: 40px;
-    color: white;
-    float: right;
-    line-height: 120px;
-    margin-right: 40px;
-    cursor: pointer;
+.nav.active{
+    background-color: white;
 }
 
-
-
-
-
-
-
-
+.scrol{
+    height: 1000px;
+}
+.nav a.active{
+    color: #222;
+}
 
 
 
