@@ -11,7 +11,7 @@ body{
     background-color: #222;  
     max-width: 1400;
     color: #ffffff;
-    min-width: 350px;
+    min-width: 550px;
 }
 
 body{
@@ -30,6 +30,8 @@ body{
 }
 
 .nav{
+    /* NavBar del lado derecho */
+    
     /* text-align: center;
     align-content: center;
     border: 1px solid #ccc;
@@ -40,9 +42,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px;
+    padding: 25px;
     transition: all 0.5s ease;
     position: fixed;
+    text-align: center;
 }
 nav ul {
     float: right;
@@ -88,12 +91,11 @@ nav.nav.active a:hover{
     height: 200px;
 }
 
-
-
-
-
-
-
+@media screen and (max-width: 700px){
+    .logo{
+        display: none;
+    }
+}
 
 
 .inicio{
